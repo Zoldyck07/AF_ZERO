@@ -1723,13 +1723,11 @@ SYSCALL_DEFINE1(swapoff, const char __user *, specialfile)
 	swap_map = p->swap_map;
 	p->swap_map = NULL;
 	p->flags = 0;
-<<<<<<< HEAD
-=======
+
 	spin_unlock(&p->lock);
 #ifdef CONFIG_FRONTSWAP
 	frontswap_invalidate_area(type);
 #endif
->>>>>>> 16186c6... nicki: backport zswap, frontswap, vnswap from Linux 3.11
 	spin_unlock(&swap_lock);
 	mutex_unlock(&swapon_mutex);
 	vfree(swap_map);
