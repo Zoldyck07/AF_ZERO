@@ -387,8 +387,9 @@ config DYNAMIC_PAGE_WRITEBACK
 	  This feature allows to use different dirty page writeback intervals
 	  when the system is suspended and when the system has been resumed.
 
+<<<<<<< HEAD
 	  If unsure, say N to disable this feature
-
+=======
 config FRONTSWAP
 	bool "Enable frontswap to cache swap pages if tmem is present"
 	depends on SWAP
