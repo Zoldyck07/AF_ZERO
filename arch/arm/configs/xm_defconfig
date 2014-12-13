@@ -543,9 +543,9 @@ CONFIG_CRYPTO_DEV_QCEDEV=m
 
 ##
 #
-#Striker tweak already on th inside
+#AF_ZERO tweak already on th inside
 #
-#Striker Feature
+#AF_ZERO Feature
 #
 ##
 
@@ -567,3 +567,7 @@ CONFIG_FORCE_FAST_CHARGE=y
 CONFIG_KERNEL_MODE_NEON=y
 CONFIG_FRANDOM=y
 CONFIG_CPU_VOLTAGE_TABLE=y
+CONFIG_SWAP=y
+CONFIG_FRONTSWAP=y
+CONFIG_ZSWAP=y
+CONFIG_VNSWAP=y
